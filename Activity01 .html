@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>String Operations</title>
+</head>
+<body>
+    <p id="concatenatedResult"></p>
+    <p id="lowercaseResult"></p>
+    <p id="uppercaseResult"></p> 
+    <p id="splitResult"></p>
+    <p id="indexPosition"></p>
+    <script>
+        // Function to concatenate two strings
+        function concatenateStrings(str1, str2) {
+            return str1.concat(str2);
+        }
+
+        // Function to split a string by commas
+        function splitString(str) {
+            return str.split(',');
+        }
+
+        // Concatenate strings
+        let string1 = "Programmo";
+        let string2 = "Phobia";
+        let concatenatedString = concatenateStrings(string1, string2);
+
+        // Display the concatenated result
+        document.getElementById("concatenatedResult").innerText = "Concatenated String: " + concatenatedString;
+
+        // Convert concatenated string to lowercase
+        let lowerCaseString = concatenatedString.toLowerCase();
+        document.getElementById("lowercaseResult").innerText = "Lowercase Concatenated String: " + lowerCaseString;
+
+        // Convert concatenated string to uppercase
+        let upperCaseString = concatenatedString.toUpperCase();
+        document.getElementById("uppercaseResult").innerText = "Uppercase Concatenated String: " + upperCaseString;
+
+        // Split string by commas
+        let inputString = "Programmo,Phobia";
+        let splitArray = splitString(inputString);
+
+        // Display the split array
+        document.getElementById("splitResult").innerText = "Split Array: " + JSON.stringify(splitArray);
+
+        // Find the index position of "Phobia" in the concatenated string
+        let indexPosition = concatenatedString.indexOf("Phobia");
+
+        // Display the index position
+        document.getElementById("indexPosition").innerText = "Index Position of 'Phobia': " + indexPosition;
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Web Page</title>
+</head>
+<body>
+    <p id="sum"></p>
+    <p>Average: <span id="average"></span></p>
+    <p id="s1"></p>
+    <p id="s2"></p>
+    <p id="s3"></p>
+    <p id="s4"></p>
+    <p id="s5"></p>
+    <p id="s6"></p>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="concat"></p>
+    <p id="output-x"></p>
+    <p id="output-y"></p>
+    <p id="output-z"></p>
+    
+    <script>
+        //1
+        let Mark1 = 30;
+        let Mark2 = 40;
+        let Mark3 = 90;
+        let sum = Mark1 + Mark2 + Mark3;
+        document.getElementById("sum").innerHTML = "Sum: " + sum;
+        document.getElementById("average").innerHTML = (sum / 3);
+        //4
+        let a = 10;
+        let b = 20;
+        let s1 = a += b;
+        let s2 = a-=b;
+        let s3 = a+=b;
+        let s4 = a*=b;
+        let s5 = a/=b;
+        let s6 = a%=b;
+
+        document.getElementById("s1").innerHTML = "s1: " + s1;
+        document.getElementById("s2").innerHTML= "s2:" +s2;
+        document.getElementById("s3").innerHTML="s3:" +s3;
+        document.getElementById("s4").innerHTML="s4:" +s4;
+        document.getElementById("s5").innerHTML="s5:"+s5;
+        //5
+        let m,n,text1,text2;
+        x=5;
+        y=4;
+        text1="A";
+        text2="B";
+
+        let result1 = (m>=n);
+        let result2 = (m!=n);
+        let result3 = (text1<text2);
+
+        document.getElementById("result1").innerHTML="result1:"+result1;
+        document.getElementById("result2").innerHTML="result2:"+result2;
+        document.getElementById("result3").innerHTML="result3:"+result3;
+    //6
+          let statement1="what a very ";
+          let statement2="nice day";
+          let concat=statement1+statement2;
+
+          document.getElementById("concat").innerHTML="concatenate:"+concat;
+    //7
+          let x = 5 + 5;       
+        let y = "5" + 5;     
+        let z = "Hello" + 5; 
+
+       
+        document.getElementById("output-x").innerHTML = "x = " + x;
+        document.getElementById("output-y").innerHTML = "y = " + y;
+        document.getElementById("output-z").innerHTML = "z = " + z;
+
+
+    </script>
+</body>
+</html>
+
+
+

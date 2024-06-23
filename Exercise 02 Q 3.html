@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Calculate area of rectangle</title>
+    </head>
+    <body>
+      <p>Height:<input type="text" id="height"></p>
+      <p>weight:<input type="text" id="weight"></p>
+      <button onclick="calculateArea()">Click</button>
+      <p id="result"></p>
+      <script>
+        
+        function calculateArea(){
+            let area,height,weight;
+        height=document.getElementById("height").value;
+        weight=document.getElementById("weight").value;
+        area=height*weight;
+        document.getElementById("result").innerHTML="area is:"+area;
+        }
+
+      </script>
+    </body>
+</html>
